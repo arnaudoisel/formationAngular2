@@ -1,0 +1,13 @@
+<header>
+  <h1>
+    <a [routerLink]="['']">Toy Store</a>
+  </h1>
+
+  <aside>
+    <a (click)="goToPanier()">
+      <i class="mdi mdi-basket"></i>
+      <span *ngIf="count">{{ count }}</span>
+    </a>
+  </aside>
+
+</header>
